@@ -96,6 +96,7 @@ footer p {
     font-weight: 500;
     font-size: 0.9em;
     text-align: center;
+    margin-top: 5em;
 }
 
 footer p a {
@@ -120,8 +121,5 @@ footer p a {
     }
     #image-grid img:nth-of-type(4) {
         height: 16em;
-    }
-    footer p {
-        margin-top: 5em;
     }
 }
