@@ -1,0 +1,127 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+header {
+    margin: 4em;
+}
+
+#profile-pic {
+    width: 10em;
+    height: 10em;
+    border-radius: 10px;
+    display: block;
+    margin: .5em auto;
+}
+
+#profile-name {
+    font-size: 1.5em;
+    color: #4e5150;
+    text-align: center;
+    margin-bottom: .5em;
+}
+
+#profile-add {
+    font-size: 0.9em;
+    color: #a9a9a9;
+    font-style: normal;
+    text-align: center;
+}
+
+#info-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 1.5em;
+    margin-top: 2em;
+}
+
+.info-box {
+    width: 6.2em;
+    height: 3.8em;
+    background-color: #e5e5e5;
+    border-radius: 10px;
+}
+
+.info-box p:first-of-type {
+    text-align: center;
+    font-size: 1.1em;
+    color: #4e5150;
+    margin: .7em 0 0 0;
+}
+
+.info-box p:nth-of-type(2) {
+    text-align: center;
+    font-size: 0.9em;
+    color: #bdbdbd;
+    margin: 0;
+}
+
+#image-grid {
+    width: 60em;
+    height: 61em;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+
+#image-grid img {
+    border-radius: 10px;
+    height: 19em;
+    width: auto;
+    filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.15));
+}
+
+#image-grid img:nth-of-type(2) {
+    grid-area: 1 / 2 / span 1 / span 2;
+}
+
+#image-grid img:nth-of-type(3) {
+    grid-area: 2 / 1 / span 1 / span 2;
+    width: 39.5em;
+}
+
+#image-grid img:nth-of-type(4) {
+    grid-area: 2 / 3 / span 2 / span 1;
+    height: 40em;
+}
+
+footer p {
+    color: #B9BDCF;
+    font-weight: 500;
+    font-size: 0.9em;
+    text-align: center;
+}
+
+footer p a {
+    font-weight: 700;
+    color: inherit;
+}
+
+@media only screen and (max-width: 600px) {
+    html {
+        font-size: 14px;
+    }
+    #image-grid {
+        height: 25em;
+        width: 25em;
+        gap: .5em;
+    }
+    #image-grid img {
+        height: 7.8em;
+    }
+    #image-grid img:nth-of-type(3) {
+        width: 16em;
+    }
+    #image-grid img:nth-of-type(4) {
+        height: 16em;
+    }
+    footer p {
+        margin-top: 5em;
+    }
+}
